@@ -1,17 +1,26 @@
 import React from "react";
 import Layout from "../components/Layout";
+import AIPrompt from "../components/AIPrompt";
 import styled from "styled-components";
+import Mainsection from "../components/Mainsection";
 
 const MainPage = () => {
   return (
     <StyledMainPage>
-      <Layout />
+      <Mainsection />
+      <StyledSecondSection>
+        <Layout />
+        <AIPrompt />
+      </StyledSecondSection>
     </StyledMainPage>
   );
 };
 
 const StyledMainPage = styled.div`
-  margin: 4rem;
+  align-items: center;
+  text-align: center;
 `;
+
+const StyledSecondSection = styled.div``;
 
 export default MainPage;

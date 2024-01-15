@@ -5,24 +5,25 @@ import axios from "axios";
 const Search = () => {
   return (
     <SearchStyled>
-      <div />
-      <form>
-        <input type="text"></input>
-      </form>
-      {}
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"></label>
+        <input
+          type="search"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Search"
+        />
+      </div>
     </SearchStyled>
   );
 };
 
 const SearchStyled = styled.div`
-  margin-top: 1rem;
-  input {
-    width: 500px;
-    padding: 0.6rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #dedbd2;
-  }
+  margin-top: 2rem;
+`;
+
+const RulesStyled = styled.div`
+  color: black;
 `;
 
 export default Search;
