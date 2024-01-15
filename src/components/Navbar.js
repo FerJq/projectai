@@ -6,7 +6,7 @@ const Navbar = () => {
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            Navbar
+            FjS.
           </a>
           <button
             class="navbar-toggler"
@@ -24,14 +24,23 @@ const Navbar = () => {
               <a class="nav-link active" aria-current="page" href="#">
                 Home
               </a>
-              <a class="nav-link" href="#">
-                Features
+              <a class="nav-link" href="https://github.com/FerJq">
+                Github
               </a>
-              <a class="nav-link" href="#">
-                Pricing
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/fernanda-j-santiago-b93b07265/"
+              >
+                Linkedin
               </a>
-              <a class="nav-link disabled" aria-disabled="true">
-                Disabled
+              <a
+                class="nav-link"
+                href="https://www.shecodes.io/graduates/64928-fernanda-santiago"
+              >
+                Shecodes Profile
+              </a>
+              <a class="nav-link" href="https://github.com/FerJq/projectai">
+                Source Code
               </a>
             </div>
           </div>

@@ -10,7 +10,6 @@ const MainPage = () => {
       <Mainsection />
       <StyledSecondSection>
         <Layout />
-        <AIPrompt />
       </StyledSecondSection>
     </StyledMainPage>
   );
