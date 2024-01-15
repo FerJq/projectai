@@ -61,11 +61,16 @@ const SearchStyled = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 `;
-const BarStyled = styled.div``;
+const BarStyled = styled.div`
+  input {
+    box-shadow: 5px 0 5px #eaeaea;
+  }
+`;
 const InfoStyled = styled.div`
   .card {
     width: 100%;
     border: none;
+    box-shadow: 5px 0 5px #eaeaea;
   }
 `;
 
