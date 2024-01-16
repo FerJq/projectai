@@ -5,7 +5,7 @@ import AIPrompt from "./AIPrompt";
 
 const Search = () => {
   //STATE
-  const [inputValue, setInputValue] = useState("Science");
+  const [inputValue, setInputValue] = useState("");
   const [dataResponse, setDataResponse] = useState(false);
   //FUNCTIONS
   const catchingInput = (event) => {
@@ -32,7 +32,7 @@ const Search = () => {
             onChange={catchingInput}
           />
         </div>
-        <AIPrompt iaprompt={dataResponse} />
+        <AIPrompt iaprompt={dataResponse} inputvalue={inputValue} />
       </BarStyled>
     </SearchStyled>
   );
