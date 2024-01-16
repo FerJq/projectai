@@ -3,21 +3,20 @@ import Typewriter from "typewriter-effect";
 import styled from "styled-components";
 
 const AIPrompt = ({ iaprompt }) => {
+  console.log(iaprompt);
   if (iaprompt) {
     return (
-      <div>
-        <div className="alert alert-info" role="alert">
-          <TypeScriptStyled>
-            <Typewriter
-              options={{
-                strings: iaprompt,
-                autoStart: true,
-                cursor: "",
-                delay: 60,
-              }}
-            />
-          </TypeScriptStyled>
-        </div>
+      <div className="alert alert-info" role="alert">
+        <TypeScriptStyled>
+          <Typewriter
+            options={{
+              strings: iaprompt,
+              autoStart: true,
+              cursor: "",
+              delay: 50,
+            }}
+          />
+        </TypeScriptStyled>
       </div>
     );
   } else {
@@ -36,11 +35,16 @@ const AIPrompt = ({ iaprompt }) => {
 
 const TypeScriptStyled = styled.div`
   display: block;
-  margin: 0 10rem 0 10rem;
   .Typewriter__wrapper {
     font-size: 1rem;
     font-weight: 600;
     color: black;
+  }
+
+  @media (max-width: 900px) {
+    justify-content: center;
+    display: block;
+    margin: auto;
   }
 `;
 

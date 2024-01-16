@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Navbar = () => {
+  // eslint-disable-next-line
   return (
     <NavbarStyled>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/#">
             <span>FjS.</span>
           </a>
           <button
@@ -22,9 +23,6 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
               <a className="nav-link" href="https://github.com/FerJq">
                 Github
               </a>

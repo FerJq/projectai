@@ -9,8 +9,8 @@ const Search = () => {
   const [dataResponse, setDataResponse] = useState(false);
 
   //API
-  let context = `I would like to have just one poem, be polite, don't show your arguments`;
-  let promptprompt = `Tell me a poem about ${inputValue}`;
+  let context = `You're so passionate about writting, I would like you to generate a 10 lines poem in basic HTML, do not explain your reasoning, make sure to follow the user instruccions, be polite.`;
+  let promptprompt = `Generate a 10 lines poem about ${inputValue}`;
   let key = `24fd0ba27a25dt7o304a40659333f2df`;
   let link = `https://api.shecodes.io/ai/v1/generate?prompt=${promptprompt}&context=${context}&key=${key}`;
 
@@ -39,7 +39,7 @@ const Search = () => {
             <button
               type="button"
               className="btn btn-info"
-              onSubmit={submitInput}
+              onClick={submitInput}
             >
               Submit
             </button>
@@ -52,14 +52,18 @@ const Search = () => {
 };
 
 const SearchStyled = styled.div`
-  margin: 0 10rem 0 10rem;
+  margin: 0 15rem 0 15rem;
   h3 {
     text-align: left;
     color: black;
   }
+  @media (max-width: 900px) {
+    justify-content: center;
+    display: block;
+    margin: auto;
+  }
 `;
 const BarStyled = styled.div`
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;

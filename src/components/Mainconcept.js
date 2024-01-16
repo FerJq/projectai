@@ -67,6 +67,18 @@ const InfoStyled = styled.div`
       color: black;
       margin: 2rem;
     }
+
+    @media (max-width: 900px) {
+      justify-content: center;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 900px) {
+    justify-content: center;
+    display: block;
+    margin: auto;
   }
 `;
 

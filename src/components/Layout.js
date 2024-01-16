@@ -98,6 +98,14 @@ const StyledLayout = styled.div`
     color: #1c1c1c;
     font-family: "Poppins", sans-serif;
   }
+
+  @media (max-width: 900px) {
+    align-items: center;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    float: none;
+  }
 `;
 
 const RulesStyled = styled.div`
@@ -107,14 +115,13 @@ const RulesStyled = styled.div`
   grid-gap: 30px;
   color: black;
 
-  @media (max-width: 700px) {
-    justify-content: center;
+  @media (max-width: 900px) {
     display: block;
-    margin: 0;
+    margin: 1rem;
   }
 
   .card {
-    max-width: 540px;
+    max-width: 100%;
     box-shadow: 5px 0 5px #eaeaea;
     border: none;
 

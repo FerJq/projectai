@@ -36,5 +36,12 @@ const StyledHeader = styled.header`
     font-size: 4rem;
     font-weight: 600;
   }
+
+  @media (max-width: 900px) {
+    .Typewriter__wrapper {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
 `;
 export default Mainsection;
