@@ -1,11 +1,22 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
+import styled from "styled-components";
 
-const AIPrompt = ({ iaprompt, inputvalue }) => {
-  if (inputvalue) {
+const AIPrompt = ({ iaprompt }) => {
+  if (iaprompt) {
     return (
       <div>
         <div className="alert alert-info" role="alert">
-          <h5>{iaprompt}</h5>
+          <TypeScriptStyled>
+            <Typewriter
+              options={{
+                strings: iaprompt,
+                autoStart: true,
+                cursor: "",
+                delay: 60,
+              }}
+            />
+          </TypeScriptStyled>
         </div>
       </div>
     );
@@ -22,5 +33,15 @@ const AIPrompt = ({ iaprompt, inputvalue }) => {
     );
   }
 };
+
+const TypeScriptStyled = styled.div`
+  display: block;
+  margin: 0 10rem 0 10rem;
+  .Typewriter__wrapper {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+  }
+`;
 
 export default AIPrompt;
