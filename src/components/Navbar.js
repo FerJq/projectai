@@ -1,15 +1,16 @@
 import React from "react";
+import styled from "styled-components";
 
 const Navbar = () => {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            FjS.
+    <NavbarStyled>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            <span>FjS.</span>
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -17,37 +18,44 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-link active" aria-current="page" href="#">
                 Home
               </a>
-              <a class="nav-link" href="https://github.com/FerJq">
+              <a className="nav-link" href="https://github.com/FerJq">
                 Github
               </a>
               <a
-                class="nav-link"
+                className="nav-link"
                 href="https://www.linkedin.com/in/fernanda-j-santiago-b93b07265/"
               >
                 Linkedin
               </a>
               <a
-                class="nav-link"
+                className="nav-link"
                 href="https://www.shecodes.io/graduates/64928-fernanda-santiago"
               >
                 Shecodes Profile
               </a>
-              <a class="nav-link" href="https://github.com/FerJq/projectai">
+              <a className="nav-link" href="https://github.com/FerJq/projectai">
                 Source Code
               </a>
             </div>
           </div>
         </div>
       </nav>
-    </div>
+    </NavbarStyled>
   );
 };
+
+const NavbarStyled = styled.div`
+  span {
+    color: violet;
+    font-weight: 700;
+  }
+`;
 
 export default Navbar;

@@ -4,12 +4,14 @@ import AIPrompt from "../components/AIPrompt";
 import styled from "styled-components";
 import Mainsection from "../components/Mainsection";
 import Wave from "../components/Wave";
+import Mainconcept from "../components/Mainconcept";
 
 const MainPage = () => {
   return (
     <StyledMainPage>
-      <Mainsection />
       <StyledSecondSection>
+        <Mainsection />
+        <Mainconcept />
         <Wave />
         <Layout />
       </StyledSecondSection>

@@ -13,67 +13,67 @@ const Layout = () => {
         Rules to interact with an <span>AI</span>
       </h1>
       <RulesStyled>
-        <div class="card text-bg-light mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src={pic1} class="img-fluid rounded-start" alt="..." />
+        <div className="card text-bg-light mb-3">
+          <div className="row g-0">
+            <div className="col-md-4">
+              <img src={pic1} className="img-fluid rounded-start" alt="..." />
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
                   Always used Good Manners towards to Build Rapport with{" "}
                   <span>AI Chatbots</span>: Say “Hello,” be nice and respectful
                   with instructions.
                 </p>
-                <p class="card-text"></p>
+                <p className="card-text"></p>
               </div>
-              <div class="spinner-grow text-info" role="status">
-                <span class="visually-hidden">Loading...</span>
+              <div className="spinner-grow text-info" role="status">
+                <span className="visually-hidden">Loading...</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="card text-bg-light mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src={pic2} class="img-fluid rounded-start" alt="..." />
+        <div className="card text-bg-light mb-3">
+          <div className="row g-0">
+            <div className="col-md-4">
+              <img src={pic2} className="img-fluid rounded-start" alt="..." />
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
                   Using Complete Sentences to Communicate with{" "}
                   <span>AI Assistants</span>: A chat AI assistant is not a
                   search engine. ...
                 </p>
-                <p class="card-text"></p>
+                <p className="card-text"></p>
               </div>
-              <div class="spinner-grow text-info" role="status">
-                <span class="visually-hidden">Loading...</span>
+              <div className="spinner-grow text-info" role="status">
+                <span className="visually-hidden">Loading...</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="card text-bg-light mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src={pic3} class="img-fluid rounded-start" alt="..." />
+        <div className="card text-bg-light mb-3">
+          <div className="row g-0">
+            <div className="col-md-4">
+              <img src={pic3} className="img-fluid rounded-start" alt="..." />
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
                   Engaging in Dialogue with <span>AI Assistants</span>: Engage
                   in dialogue with the AI assistant by responding to its
                   answers.
                 </p>
-                <p class="card-text"></p>
+                <p className="card-text"></p>
               </div>
-              <div class="spinner-grow text-info" role="status">
-                <span class="visually-hidden">Loading...</span>
+              <div className="spinner-grow text-info" role="status">
+                <span className="visually-hidden">Loading...</span>
               </div>
             </div>
           </div>
@@ -106,6 +106,12 @@ const RulesStyled = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   color: black;
+
+  @media (max-width: 700px) {
+    justify-content: center;
+    display: block;
+    margin: 0;
+  }
 
   .card {
     max-width: 540px;
