@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import AIPrompt from "./AIPrompt";
 
 const Search = () => {
+  //STATE
+  const [inputValue, setInputValue] = useState("Science");
+  const [dataResponse, setDataResponse] = useState(false);
+  //FUNCTIONS
+  const catchingInput = (event) => {
+    setInputValue(event.target.value);
+  };
+  //API
+  let context = `I would like to have just one poem, be polite, don't show your arguments`;
+  let promptprompt = `Tell me a poem about ${inputValue}`;
+  let key = `24fd0ba27a25dt7o304a40659333f2df`;
+  let link = `https://api.shecodes.io/ai/v1/generate?prompt=${promptprompt}&context=${context}&key=${key}`;
+  axios.get(link).then((response) => setDataResponse(response.data.answer));
+
   return (
     <SearchStyled>
       <BarStyled>
@@ -15,9 +29,10 @@ const Search = () => {
             className="form-control"
             id="exampleFormControlInput1"
             placeholder="Search"
+            onChange={catchingInput}
           />
         </div>
-        <AIPrompt />
+        <AIPrompt iaprompt={dataResponse} />
       </BarStyled>
     </SearchStyled>
   );

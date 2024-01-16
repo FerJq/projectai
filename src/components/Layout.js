@@ -119,6 +119,9 @@ const RulesStyled = styled.div`
     border: none;
 
     img {
+      max-width: 100%;
+      width: 100%;
+      position: relative;
       object-fit: cover;
     }
 
