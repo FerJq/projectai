@@ -20,6 +20,9 @@ const Footer = () => {
         <div>
           <i class="fa-solid fa-code"></i> VSCode
         </div>
+        <div>
+          <i class="fa-brands fa-bootstrap"></i> Boostrap
+        </div>
       </IconsStyled>
     </FooterStyled>
   );
